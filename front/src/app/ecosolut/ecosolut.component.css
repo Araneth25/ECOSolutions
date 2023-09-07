@@ -1,5 +1,5 @@
 .econav {
-    background: #263238;
+    background: linear-gradient(45deg, #77CE96 0%, #439E63 50%, #2D6440 100%);
     transition: all .5s ease;
     position: fixed;
     z-index: 2;
