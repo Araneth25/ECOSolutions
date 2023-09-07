@@ -12,6 +12,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { HeaderComponent } from './header/header.component';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { CdkMenuModule } from '@angular/cdk/menu';
+import { ApiComponent } from './api/api.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CdkMenuModule } from '@angular/cdk/menu';
     StatisticsComponent,
     PagesComponent,
     SettingsComponent,
-    HeaderComponent
+    HeaderComponent,
+    ApiComponent
   ],
   imports: [
     BrowserModule,

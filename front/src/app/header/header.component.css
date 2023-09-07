@@ -92,11 +92,6 @@
     margin-top: 2px;
 }
 
-.head-content-right .head-menu .head-menu-item .head-menu-item-btn:hover,
-.head-content-right .head-menu .head-menu-item .head-menu-item-btn:focus {
-   /* background: #eff2f3;*/
-}
-
 .head-content-right .head-menu .head-menu-item .head-menu-item-btn:hover .menu-icon,
 .head-content-right .head-menu .head-menu-item .head-menu-item-btn:focus .menu-icon {
     color: #439E63;
