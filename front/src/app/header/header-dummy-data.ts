@@ -53,6 +53,6 @@ export const userItems = [
     },
     {
         icon: 'fa-solid fa-arrow-right-from-bracket',
-        label: 'Cerrar sesión'
+        label: 'Salir'
     }
 ];

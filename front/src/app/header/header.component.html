@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="head-user-avatar-container">
-                <div class="head-user-avatar">
+                <div class="head-user-avatar" [cdkMenuTriggerFor]="userOverlay">
                     <img src="../../assets/user.jpg" alt="user" class="user-avatar">
                     <div class="circle-indicator pulse"></div>
                 </div>
@@ -91,6 +91,19 @@
                         {{notification.description}}
                     </p>
                 </div>
+            </li>
+        </ul>
+    </div>
+</ng-template>
+
+<ng-template #userOverlay>
+    <div class="overlay overlay-user overlay-fall" cdkMenu>
+        <ul>
+            <li *ngFor="let item of userItems" cdkMenuItem>
+                <a>
+                    <i class="icon" [ngClass]="item.icon"></i>
+                    <span>{{item.label}}</span>
+                </a>
             </li>
         </ul>
     </div>
