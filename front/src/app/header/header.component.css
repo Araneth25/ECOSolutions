@@ -174,7 +174,7 @@
 .overlay{
     background: #fff;
     margin-top: 10px;
-    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 13%);
     border-radius: 0.25rem;
 }
 
@@ -210,6 +210,8 @@
     border-radius: 0.25rem;
 }
 
+/*DISTRIBUCION ESTILO DE LENGUAJES Y BANDERAS*/
+
 .overlay-language {
     padding: 0.5rem 0;
 }
@@ -233,5 +235,60 @@
 }
 
 .overlay-language ul li:hover {
+    background: #eff2f3;
+}
+
+/*OVERLAY DE LAS NOTIFICACIONES*/
+.overlay-notification ul {
+    list-style: none;
+    width: 320px;
+}
+
+.overlay-notification ul li {
+    padding: 1rem;
+}
+
+.overlay-notification ul li.notification-head-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overlay-notification ul li.notification-head-container .notification-head {
+    font-size: 15px;
+    color: #495057;
+}
+
+.overlay-notification ul li.notification-head-container .view-all-link {
+    font-size: 80%;
+    color:  #3E8944;
+    cursor: pointer;
+}
+
+.overlay-notification ul li.notification-message-container {
+    cursor: pointer;
+    display: flex;
+}
+
+.overlay-notification ul li.notification-message-container i {
+    margin-right: 15px;
+    font-size: 20px;
+    color:  #3E8944;
+    width: 25px;
+    text-align: center;
+}
+
+.overlay-notification ul li.notification-message-container .notification-subject {
+    margin-bottom: 0.25rem;
+    font-size: 15px;
+    color: #495057;
+}
+
+.overlay-notification ul li.notification-message-container .notification-desc {
+    font-size: 12px;
+    color: #74788d;
+}
+
+.overlay-notification ul li.notification-message-container:hover {
     background: #eff2f3;
 }

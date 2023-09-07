@@ -32,7 +32,7 @@
                     </button>
                 </div>
                 <div class="head-menu-item">
-                    <button class="head-menu-item-btn ripple">
+                    <button class="head-menu-item-btn ripple" [cdkMenuTriggerFor]="notificationOverlay">
                         <i class="fa-regular fa-bell menu-icon"></i>
                     </button>
                 </div>
@@ -67,6 +67,30 @@
             <li *ngFor="let lang of languages" cdkMenuItem>
                 <img [src]="'assets/banderas/' + lang.flag + '.jpg'" alt="flag">
                 <span>{{lang.language}}</span>
+            </li>
+        </ul>
+    </div>
+</ng-template>
+
+<ng-template #notificationOverlay>
+    <div class="overlay overlay-notification overlay-fall" cdkMenu>
+        <ul>
+            <li class="notification-head-container">
+                <div class="notification-head">Notificación</div>
+                <span class="view-all-link">
+                    <a>Ver todo</a>
+                </span>
+            </li>
+            <li class="notification-message-container" *ngFor="let notification of notifications" cdkMenuItem>
+                <i [class]="notification.icon"></i>
+                <div>
+                    <div class="notification-subject">
+                        {{notification.subject}}
+                    </div>
+                    <p class="notification-desc">
+                        {{notification.description}}
+                    </p>
+                </div>
             </li>
         </ul>
     </div>
