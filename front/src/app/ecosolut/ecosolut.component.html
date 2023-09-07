@@ -1,8 +1,8 @@
 <div class="econav" [ngClass]="collapsed ?  'econav-collapsed': ''">
     <div class="logo-container">
-        <button class="logo" (click)="toggleCollapse()">U</button>
-        <div class="logo-text" *ngIf="collapsed">Bienvenido</div>
-        <button class="btn-close" *ngIf="collapsed" (click)="closeEconav()">
+        <button class="logo" (click)="toggleCollapse()">E</button>
+        <div class="logo-text" @fadeInOut *ngIf="collapsed">Bienvenido</div>
+        <button class="btn-close" @rotate *ngIf="collapsed" (click)="closeEconav()">
             <i class="fas fa-times close-icon"></i>
         </button>
     </div>
@@ -13,7 +13,7 @@
                 [routerLinkActiveOptions]="{exact: true}"
             >
                 <i class="econav-link-icon" [class]="data.icon"></i>
-                <span class="econav-link-text" *ngIf="collapsed">{{data.label}}</span>
+                <span class="econav-link-text" @fadeInOut *ngIf="collapsed">{{data.label}}</span>
             </a>
         </li>
     </ul>
