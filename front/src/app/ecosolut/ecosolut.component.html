@@ -1,0 +1,20 @@
+<div class="econav" [ngClass]="collapsed ?  'econav-collapsed': ''">
+    <div class="logo-container">
+        <button class="logo" (click)="toggleCollapse()">U</button>
+        <div class="logo-text" *ngIf="collapsed">Bienvenido</div>
+        <button class="btn-close" *ngIf="collapsed" (click)="closeEconav()">
+            <i class="fas fa-times close-icon"></i>
+        </button>
+    </div>
+    <ul class="econav-nav">
+        <li class="econav-nav-item" *ngFor="let data of navData">
+            <a class="econav-nav-link" [routerLink]="[data.routeLink]"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}"
+            >
+                <i class="econav-link-icon" [class]="data.icon"></i>
+                <span class="econav-link-text" *ngIf="collapsed">{{data.label}}</span>
+            </a>
+        </li>
+    </ul>
+</div>
