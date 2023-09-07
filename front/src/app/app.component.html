@@ -1,4 +1,8 @@
 <app-ecosolut (onToggleEcoNav)="onToggleEcoNav($event)"></app-ecosolut>
+<app-header
+    [collapsed] = "isEcoNavCollapsed"
+    [screenWidth] = "screenWidth"
+></app-header>
 <app-body
     [collapsed] = "isEcoNavCollapsed"
     [screenWidth] = "screenWidth">

@@ -6,12 +6,12 @@ export const navbarData = [
     },
     {
         routeLink: 'statistics',
-        icon: 'fas fa-chart-bar',
+        icon: 'fa-regular fa-chart-bar',
         label: 'Análisis'
     },
     {
         routeLink: 'pages',
-        icon: 'fas fa-file',
+        icon: 'fa-regular fa-file',
         label: 'Informes'
     },
     {
