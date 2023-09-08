@@ -20,9 +20,12 @@ Incluyendo un navigation drawer donde el usuario podría tener más atajos, sien
 
 
 ## Para poder ver el proyecto e instlación de Angular CLI
-Usar estos comandos:
-`npm install -g @angular/cli` (Si no tienes Angular CLI)
-`cd ruta/ECOSolutions/front` (ruta = dirección donde ha sido descargado el proyecto)
+Usar estos comandos:  
+
+`npm install -g @angular/cli` (Si no tienes Angular CLI)  
+
+`cd ruta/ECOSolutions/front` (ruta = dirección donde ha sido descargado el proyecto)  
+
 `ng serve`
 
 
