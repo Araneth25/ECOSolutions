@@ -7,10 +7,9 @@ import { DataService } from './../data.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  precioMaximoActual: number = 0;
-  precioMinimoActual: number = 0;
-  precioMaximoAnterior: number = 0;
-  precioMinimoAnterior: number = 0;
+  precios: number[] = [2];
+  mediaAritmetica: number = 0;
+
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
@@ -20,15 +19,23 @@ export class DashboardComponent implements OnInit {
     this.dataService.getData(startDate, endDate)
       .subscribe(
         (response: any) => {
-          // Suponiendo que los datos están en la propiedad 'data' del objeto de respuesta
-          this.precioMaximoActual = response.data.precioMaximoActual;
-          this.precioMinimoActual = response.data.precioMinimoActual;
-          this.precioMaximoAnterior = response.data.precioMaximoAnterior;
-          this.precioMinimoAnterior = response.data.precioMinimoAnterior;
+          this.precios = response.data.precios;
+          this.calcularMediaAritmetica();
         },
         (error) => {
           console.error(error);
         }
       );
+  }
+
+  mostrarDetalle(valor: number) {
+    alert(`El valor seleccionado es: ${valor}`);
+  }  
+
+  calcularMediaAritmetica() {
+    if (this.precios && this.precios.length > 0) {
+      const sumatoria = this.precios.reduce((total, precio) => total + precio, 0);
+      this.mediaAritmetica = sumatoria / this.precios.length;
+    }
   }
 }

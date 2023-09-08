@@ -9,29 +9,52 @@
         </div>
 </div>
 
+<br>
+
 <div class="card-container">
     <div class="rotating-card">
       <div class="numeric-display">
         <div class="display-label">Precio Máximo Actual</div>
-        <div class="display-value">{{ precioMaximoActual }}</div>
+        <div class="display-value">{{ precios }}</div>
       </div>
     </div>
     <div class="rotating-card">
       <div class="numeric-display">
         <div class="display-label">Precio Mínimo Actual</div>
-        <div class="display-value">{{ precioMinimoActual }}</div>
+        <div class="display-value">{{ precios }}</div>
       </div>
     </div>
     <div class="rotating-card">
       <div class="numeric-display">
         <div class="display-label">Precio Máximo Anterior</div>
-        <div class="display-value">{{ precioMaximoAnterior }}</div>
+        <div class="display-value">{{ precios }}</div>
       </div>
     </div>
     <div class="rotating-card">
       <div class="numeric-display">
         <div class="display-label">Precio Mínimo Anterior</div>
-        <div class="display-value">{{ precioMinimoAnterior }}</div>
+        <div class="display-value">{{ precios }}</div>
       </div>
     </div>
-  </div>
+</div>
+
+<div class="table-container">
+<table class="interactive-table">
+    <thead>
+      <tr>
+        <th>Hora</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let precio of precios; let i = index">
+        <td>{{ i }}:00</td>
+        <td>{{ precio }}</td>
+      </tr>
+      <tr>
+        <td>Media</td>
+        <td>{{ mediaAritmetica }}</td>
+      </tr>
+    </tbody>
+</table>
+</div>
