@@ -1,8 +1,9 @@
 # ECOSolutions project
-Interfaz de usuario para la visualización de datos recogidos por un API pública de la Red Eléctrica de España usando HTML, CSS y con framework Angular.
+Interfaz de usuario para la visualización de datos recogidos por un API pública de la Red Eléctrica de España usando HTML, CSS y con framework Angular. Se recogen los datos de PVPC (€/MWh).
+Siendo entretenido con animaciones con la ayuda de las librerías de Angular y diseños en CSS.
 
 ### AppBar con Usuario
-Donde podemos ver un AppBar con el avatar de usuario incluyendo un buscador, notificaciones, escoger el idioma para la página, incluyendo ver el perfil del usuario, cambio de contraseña, ajustes y cerrar sesión.
+Donde podemos ver un AppBar con el avatar de usuario incluyendo un buscador, notificaciones, escoger el idioma para la página, incluyendo ver el perfil del usuario, cambio de contraseña, ajustes y cerrar sesión. Algunas de las opciones como la imagen del avatar, notificaciones y cambio de idioma contienen elementos en listado.
 
 ![appBar](https://github.com/Araneth25/ECOSolutions/assets/97691182/b24bd5dd-58fb-402a-8002-638d3faf64a3)
 
@@ -19,7 +20,7 @@ Incluyendo un navigation drawer donde el usuario podría tener más atajos, sien
 
 
 
-## Para poder ver el proyecto e instlación de Angular CLI
+## Para poder ver el proyecto e instalación de Angular CLI
 Usar estos comandos:  
 
 `npm install -g @angular/cli` (Si no tienes Angular CLI)  
