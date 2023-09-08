@@ -11,7 +11,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getData(startDate: string, endDate: string): Observable<any> {
-    const apiUrlWithParams = `${this.apiUrl}?start_date=${startDate}&end_date=${endDate}&time_trunc=hour&cached=true`;
+    const apiUrlWithParams = `${this.apiUrl}?start_date=${startDate}&end_date=${endDate}&time_trunc=hour&cached=true&only_target=true`;
     return this.http.get(apiUrlWithParams);
   }
 }
