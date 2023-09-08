@@ -2,6 +2,17 @@ h1{
     color: #495057;
 }
 
+.header-container {
+    display: flex; 
+    align-items: center; 
+    gap: 17px; 
+  }
+  
+  .logo {
+    max-width: 100px; 
+    height: auto; 
+  }
+  
 /*Estilo para card*/
 .card-container {
     display: flex;
