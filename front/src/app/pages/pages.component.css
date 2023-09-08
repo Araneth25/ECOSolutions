@@ -1,0 +1,10 @@
+.card-image {
+    max-width: 100px;
+    margin-left: 450px;
+    transition: transform 0.3s ease; /* Agrega una transición de escala */
+  }
+  
+  .card-image:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen en 10% en hover */
+  }
+  
