@@ -1,0 +1,30 @@
+/* Estilos para el textarea */
+.comment-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  /* Estilos para el botón */
+  .btn {
+    background-color: #439E63;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #439E63;
+  }
+  
+  /* Estilos para el contador de caracteres */
+  .char-count {
+    margin-left: 10px;
+    color: #777;
+  }
+  
