@@ -5,7 +5,7 @@ Siendo entretenido con animaciones con la ayuda de las librerías de Angular y d
 ### AppBar con Usuario
 Donde podemos ver un AppBar con el avatar de usuario incluyendo un buscador, notificaciones, escoger el idioma para la página, incluyendo ver el perfil del usuario, cambio de contraseña, ajustes y cerrar sesión. Algunas de las opciones como la imagen del avatar, notificaciones y cambio de idioma contienen elementos en listado.
 
-![appBar](https://github.com/Araneth25/ECOSolutions/assets/97691182/b24bd5dd-58fb-402a-8002-638d3faf64a3)
+![appBar](https://github.com/Araneth25/ECOSolutions/assets/97691182/763aee69-6cb3-4eb0-9ded-752593955695)
 
 **AVATAR**
 
