@@ -12,7 +12,6 @@ import { SettingsComponent } from './settings/settings.component';
 import { HeaderComponent } from './header/header.component';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { CdkMenuModule } from '@angular/cdk/menu';
-import { ApiComponent } from './api/api.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -25,7 +24,6 @@ import { HttpClientModule } from '@angular/common/http';
     PagesComponent,
     SettingsComponent,
     HeaderComponent,
-    ApiComponent
   ],
   imports: [
     BrowserModule,
