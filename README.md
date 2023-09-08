@@ -17,8 +17,9 @@ Incluyendo un navigation drawer donde el usuario podría tener más atajos, sien
 ![navigation](https://github.com/Araneth25/ECOSolutions/assets/97691182/3f622642-78ad-4e30-af14-ce7670911c20)
 
 ### Contenido
+Como podremos ver, también está incluido el formato de página web sea tanto extenso como pequeño. Creando animaciones tanto para la tabla como para los displays númericos.
 
-
+![contenido](https://github.com/Araneth25/ECOSolutions/assets/97691182/7921e052-69cc-4389-9fdf-6dca194fb677)
 
 ## Para poder ver el proyecto e instalación de Angular CLI
 Usar estos comandos:  
