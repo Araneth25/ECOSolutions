@@ -1,4 +1,4 @@
-# ECOSolutions
+# ECOSolutions project
 Interfaz de usuario para la visualización de datos recogidos por un API pública de la Red Eléctrica de España usando HTML, CSS y con framework Angular.
 
 ### AppBar con Usuario
